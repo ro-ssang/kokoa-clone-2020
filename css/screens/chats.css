@@ -1,0 +1,12 @@
+@keyframes sink {
+  from {
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+.chats-screen .user-component:active {
+  animation: sink 0.1s linear forwards;
+}

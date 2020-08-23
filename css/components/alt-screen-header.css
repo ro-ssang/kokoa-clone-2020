@@ -1,0 +1,67 @@
+.alt-header {
+  padding: var(--horizontal-space);
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alt-header__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.alt-header__title--kokoa {
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.alt-header__column {
+  width: 33%;
+}
+
+.alt-header__column i {
+  cursor: pointer;
+}
+
+.alt-header__column i:hover {
+  color: var(--i-hover-color);
+}
+
+.alt-header__column i:active {
+  transform: scale(0.85);
+}
+
+.alt-header__column:first-child {
+  margin-right: auto;
+}
+
+@keyframes backward {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateX(-8px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.alt-header__column:first-child i:hover {
+  animation: backward 0.3s ease-in-out;
+}
+
+.alt-header__column:nth-child(2) {
+  text-align: center;
+}
+
+.alt-header__column:last-child {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alt-header__column span:last-child {
+  margin-left: 20px;
+}

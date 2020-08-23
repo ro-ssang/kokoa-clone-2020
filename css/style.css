@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
+
+/* Screens */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+@import "screens/chat-burgerking.css";
+@import "screens/chats.css";
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #2e363e;
+  background-color: var(--green);
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+@keyframes startInPage {
+  0% {
+    padding: 40px 5px;
+    transform: scale(0.85) translateY(700px);
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px 5px #52575d;
+  }
+  80% {
+    padding: 40px 5px;
+    transform: scale(0.85) translateY(0px);
+    border-radius: 50px;
+    box-shadow: 3px 0px 20px 5px #52575d;
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+    border: none;
+    border-radius: none;
+  }
+}
+
+.start-in-page {
+  height: 100vh;
+  background-color: var(--light-green);
+  animation: startInPage 0.6s ease-out;
+}
+
+@keyframes startInPagePop {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.start-in-page--pop {
+  animation: startInPagePop 0.3s ease-out;
+}

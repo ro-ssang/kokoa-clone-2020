@@ -1,0 +1,12 @@
+:root {
+  --yellow: #fae100;
+  --gray: rgba(0, 0, 0, 0.5);
+  --indigo: #373568;
+  --green: #115a48;
+  --light-green: #f3f7f6;
+  --orange: #ff8719;
+  --dark-white: #eae9ee;
+  --horizontal-space: 25px;
+  --main-border: 1px solid rgba(0, 0, 0, 0.3);
+  --i-hover-color: #ff8719;
+}

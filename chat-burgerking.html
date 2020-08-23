@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Chat with Nico - Kokoa Clone</title>
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fas fa-chevron-left fa-3x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">버거킹</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chats__timestamp">
+        Monday, August 30, 2020
+      </div>
+      <div class="message-row">
+        <img class="message__avatar" src="screenshots/burgerking.png" />
+        <div class="message-row__content">
+          <span class="message__author">(광고) 버거킹</span>
+          <div class="message__info">
+            <span class="message__buble message__buble--ad">
+              <div class="message__ad">
+                <span class="message__ad-title">
+                  (광고) 파격 할인 도착!🔥와퍼 3500원!
+                </span>
+                <img class="message__ad-img" src="screenshots/whopper.png" />
+              </div>
+              <div class="message__ads">
+                <img class="message__ads-img" src="screenshots/yogiyo.png" />
+                <div class="message__ads-text">
+                  <span>🛵요기요~ 할인요</span>
+                  <span>버거킹, 요기요 최대 6000원 할인</span>
+                </div>
+              </div>
+              <div class="message__ads">
+                <img class="message__ads-img" src="screenshots/burger.jfif" />
+                <div class="message__ads-text">
+                  <span>📲 오직 버거킹 앱에서만!</span>
+                  <span>불고기버거 1500원 쿠폰</span>
+                </div>
+              </div>
+              <div class="message__ads">
+                <img class="message__ads-img" src="screenshots/stamp.jfif" />
+                <div class="message__ads-text">
+                  <span>😁 온/오프라인 통합스탬프</span>
+                  <span>적립 2배! 와퍼세트 무료!</span>
+                </div>
+              </div>
+              <div class="message__bubble-btns">
+                <button>자세히 보기</button>
+                <button>공유하기</button>
+              </div>
+            </span>
+            <span class="message__time">21:22</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply reply-ad">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input
+          type="text"
+          placeholder="This channel is not available for chatting."
+          disabled
+        />
+        <i class="far fa-smile-wink fa-lg"></i>
+        <button disabled>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <div id="no-mobile">
+      <span>Your screen is too big !!</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/170ed30cb0.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

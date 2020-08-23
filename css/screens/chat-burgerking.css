@@ -1,0 +1,63 @@
+.message__buble--ad,
+.message__ad {
+  display: flex;
+  flex-direction: column;
+}
+
+.message__ad {
+  align-items: center;
+}
+
+.message__ad-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.message__ad-img {
+  width: 400px;
+  height: 180px;
+}
+
+.message__ads {
+  display: flex;
+  margin-top: 10px;
+}
+
+.message__ads-img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.message__ads-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.message__ads-text span:first-child {
+  margin-bottom: 8px;
+}
+
+.message__bubble-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.message__bubble-btns button {
+  width: 48%;
+  height: 42px;
+  background-color: var(--yellow);
+  border-radius: 5px;
+}
+
+.message__bubble-btns button:active {
+  transform: scale(0.95);
+}
+
+.reply-ad .reply__column:last-child input {
+  background-color: var(--dark-white);
+}
